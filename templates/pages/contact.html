@@ -1,0 +1,88 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- <div class="img-content"></div> -->
+<div class="container-content">
+    <section class="container mt-5 pt-5">
+        <div class="d-flex justify-content-center">
+            <img src="/static/image/index/contact.svg" alt="contact_img">
+        </div>
+
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-6">
+
+                {% if message_name %}
+                <section>
+                    <h2 style="text-align: center;">
+                        Thanks {{ message_name}}!
+                    </h2>
+
+                    <p style="text-align: center;">
+                        we received your email and will respond shortly...
+                    </p>
+                </section>
+                {% else %}
+
+
+                <h3 class="row col-lg-12 d-flex justify-content-center" style="color:white">Get In Touch With Us</h3>
+                <div class="row d-flex justify-content-center">
+                    <!-- <div class="icon"></div> -->
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="text">
+                        <h3 style="color: white;">Address</h3>
+                        <p style="color:#19AF00; background-color:white; opacity:.6;">Murkuchi, Udayapur</p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3 style="color: white;">Phone</h3>
+                        <p style="color:#19AF00; background-color:white; opacity:.6;">+977 9826770332, 035-690444</p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3 style="color: white;">Email</h3>
+                        <p style="color:#19AF00; background-color:white; opacity:.6;">lbkirana875@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+
+                <form method="POST" enctype="multipart/form-data" action="{% url 'contact' %}">
+                    {% csrf_token %}
+                    <h2 row col-lg-12 d-flex justify-content-center style="color: white;">Send Message</h2>
+                    <div class="row col-lg-12">
+                        <span style="color: #00FF89;">Full Name</span>
+                        <input type="text" style="color: white;" name="message_name" class="pro_data" id="pro-data" required="required">
+                    </div>
+
+                    <div class="row col-lg-12">
+                        <span style="color: #00FF89;">Email</span>
+                        <input type="text" style="color: white;" name="message_email" class="pro_data" id="pro-data" required="required">
+                    </div>
+
+                    <div class="row col-lg-12">
+                        <span style="color: #00FF89;">Type your Message</span>
+                        <textarea class="pro_data-2" type="text" name="message" required="required"
+                            style="color: black; border: radius 12px;">Type your comment here.</textarea>
+
+                    </div>
+                    <br>
+
+                    <div class="row col-lg-12 " style="padding-bottom: 2rem;">
+                        <input type="submit" style="border-radius: 12px; height: 40px; background-color:#19AF00;"
+                            name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+
+{% endif %}
+
+{% endblock %}

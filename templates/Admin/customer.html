@@ -1,0 +1,54 @@
+{% extends 'Admin/base.html' %} {% block content %}
+
+<div class="container-content">
+        
+    <a href="#home"> <img src="/static/image/header/backtotop.png" style="width: 3%; position:fixed; top: 640px; left: 1350px"  alt=""> </a>
+
+    <div class="deal-container" id="vegetables">
+        
+        <div class="col-12 pb-3 d-flex justify-content-center"style="background-color: #68B49D; opacity:0.8;">
+            <button class="admin_add_button">
+                <h4>Your Customer</h4>
+            </button>
+        </div>
+
+        <div class="col-log-12 text-center ">
+
+            <table class="table table-bordered border-warning">
+                <thead>
+                  <tr>
+                    <th scope="col-1" class="py-3" style="font-size: 20px ">ID</th>
+                    <th scope="col-1" class="py-3"style="font-size: 20px;">Name</th>
+                    <th scope="col-1" class="py-3"style=" font-size: 20px;">Email</th>
+                    <th scope="col-1" class="py-3"style="font-size: 20px;">Contact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td style=" font:large; color:white;" class="py-3">Dristi</td>
+                    <td style=" font:large; color:white;" class="py-3">dhristi25@gmail.com</td>
+                    <td style=" font:large; color:white;" class="py-3">9826770336</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td style="color: white;" class="py-3">Bhupraj</td>
+                    <td style="color: white;" class="py-3">bhupraj875@gmail.com</td>
+                    <td style="color: white;" class="py-3">9826770362</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td style="font:large; color:white;" class="py-3">Saroj</td>
+                    <td style=" font:large; color:white;" class="py-3">tsaroj895#gmail.com</td>
+                    <td style=" font:large; color:white;"class="py-3" >9826770332</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+        </div>
+    </div>
+        
+</div>
+
+{% endblock %}

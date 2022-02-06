@@ -1,0 +1,104 @@
+{% extends 'Admin/base.html' %} {% block content %}
+
+<div class="container" id="vegetables">
+    <div class="col-12 pro">
+        <div class="text-center pb-2">
+            <h1 class="title"> VEGETABLES </h1>
+        </div>
+    </div>
+
+    <div class="container-contener">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 ">
+                    <div class="col-12 pb-3 d-flex justify-content-center"
+                        style="background-color: #68B49D; opacity:0.8;">
+                        <button class="admin_add_button">
+                            <h4>Add products</h4>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 pt-2 pb-3">
+                            <h3 class="pro-one">Submit Your Products</h3>
+                        </div> <br>
+
+                        <div class="col-lg-12 pb-2">
+                            <div class="pro-one pb-2">
+                                Product Name
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 pb-2">
+                            <div>
+                                <input type="text" style="color: white;" name="product_data" class="pro_data"
+                                    id="pro-data">
+                            </div>
+
+                        </div><br>
+
+                        <div class="col-lg-12 pb-2">
+                            <div class="pro-one pb-2">
+                                Product Freshness
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 d-flex pb-2">
+                            <input type="radio" name="editList" value="always"><b class="freshness">Today's
+                                Delivery</b>
+                            <br>
+                            <input type="radio" name="editList" value="never"><b class="freshness">15 Days in
+                                stock</b>
+                            <br>
+                            <input type="radio" name="editList" value="costChange"> <b class="freshness">30 Days in
+                                stock</b>
+                        </div><br>
+
+                        <div class="col-lg-12 d-flex pb-2">
+                            <div class="pro-one">
+                                Image of the Product
+                            </div>
+                        </div><br>
+
+                        <div class="col-lg-12 d-flex pb-2">
+                            <div>
+                                <input type="file" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 d-flex pb-2">
+                            <div class="pro-one">
+                                Details
+                            </div>
+                        </div><br>
+                        <div class="col-lg-12 d-flex pb-2">
+                            <div>
+                                <textarea class="pro_data-2"
+                                    style="color: white;">Type your comment here.</textarea>
+                            </div>
+                        </div><br>
+
+                        <div class="col-lg-12 d-flex pb-2">
+                            <div class="row">
+                                <div class="col-lg-12 pro-one pb-2">
+                                    Price
+                                </div><br>
+                                <div class="col-lg-12">
+                                    <input type="text" placeholder="Rs." name="product_data" class="pro_data-3"
+                                        id="pro-data">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center py-3">
+                            <a href="#" class="px-5 btn btn-lg btn-success text-light">Submit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/LBkirana.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/register.css'%}" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <title>Lb Kirana</title>
+  </head>
+
+  <body>
+    <div class="container-fluid background ">
+      <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12"></div>
+          <div class="col-md-4 col-sm-4 col-xm-12">
+              <!-- Form starts here  -->
+              
+                <form class="form-container" action="#" method="POST" class="login">
+                  {% csrf_token %}
+
+                <div class="text-center">
+                    <p class="font">Login </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputUsername" style="color: white;">User Name</label>
+                    <input type="username" name="username" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1" style="color: white;">Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-check text-center" >
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label " >Agree all Terms & condition</label>
+                  </div> <br>
+              
+                  
+                  <button type="submit" class="btn btn-sucess btn-block " style="background-color: lawngreen; margin-top:8px;">Log in </button>
+                  <div class="text-center">
+                    <label style="margin-top: 3%;"> Or </label>
+                  </div>
+                  <button type="submit" class="btn btn-sucess btn-block " style="background-color: lawngreen; margin-top:8px;" >
+                  <a href="/register" style="text-decoration: none; color:black">Register</a>
+                  </button>
+
+                </form>
+              <!-- Form ends here  -->
+          </div>
+          <div class="col-md-4 col-sm-4 col-xm-12"></div>
+      </div>
+  </div>
+
+  </body>
+</html>
+
