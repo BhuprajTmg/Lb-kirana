@@ -15,7 +15,7 @@ body{
 }
 
 .pro{
-    background-image: url(/static/image/index/background.svg);
+    background-image: url(/static/image/admin/vegitable.jfif);
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -225,6 +225,17 @@ button{
     opacity: .8;
 }
 
+.product{
+    margin: 50px 50px 50px 5%;
+    width: 90%;
+    background-image: url(/static/image/index/women.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+}
+
 .aboutus_content{
     margin: 5px 50px 50px 5%;
     width: 90%;
@@ -340,7 +351,7 @@ button{
 }
 
 .parallax1{
-    background-image: url(images/login.svg);
+    background-image: url(/static/image/index/login.svg);
 }
 
 .footer{
