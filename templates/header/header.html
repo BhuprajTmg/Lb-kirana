@@ -1,50 +1,58 @@
 {% load static %}
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS Files -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lb-Kirana </title>
 
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/LBkirana.css' %}" rel="stylesheet">
-    <link href="{% static 'css/register.css' %}" rel="stylesheet">
-    <link href="{% static 'css/login.css' %}" rel="stylesheet">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  </head>
     
+
 </head>
-
 <body>
-  <div class="parallax">
-    <div class="page-title"> LB Kirana <a href="/"> <img src="/static/image/header/logo.svg" style="position: absolute; top:35%; left:4%; width:8%" alt="img_logo">  </a> </div>
-  
-  </div>
-  
-  <div class="menu"  id="sticky">
-    <ul class="menu-ul">
-  
-        <a href="/" class="a-menu" id="home"><li>Home</li></a>
-        <a href="/contact/" class="a-menu"><li>Contact Us</li></a>
-        <a href="/product/aboutus_page/" class="a-menu"><li>About us</li></a>
-        <a href="/login/" class="a-menu"><li>Sign in</li></a>
-  
-    </ul>
-  
-    <div class="search-box">
-        <form>
-            <input type="text" style="position:relative; top: -6px; left: 3px;" placeholder="Search... " name="search" class="search-input"/>
-            <button type="submit"> <img src="/static/image/header/search_icon.png" style="width: 80%; height:70%; position:relative; top:-7px;" alt="search_img"> </button>
-  
-        </form>
-    </div>
-
-  </div>
-</body>
+    <header>
+        <!-- header section starts here -->
+    
+        <div class="header-1">
+            <a href="#"><img src="/static/image/logo.svg" style="height: 5rem; padding-top: -1rem; padding-bottom: -1rem;"  alt="img_logo"></a>
+    
+            <form action="" class="search-box-container">
+                <input type="search" name="search" id="search-box" placeholder="search here....">
+    
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </div>
+    
+        <div class="header-2">
+    
+            <div id="menu-bar" class="fas fa-bars"></div>
+    
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#category">category</a>
+                <a href="#products">products</a>
+                <a href="#contact">contact</a>
+            </nav>
+    
+            <div class="icons dropdown">
+                <a href="#" class="fas fa-user-circle dropbtn">
+                    <div class="dropdown-content">
+                        <a href="/login/">Login</a>
+                        <a href="/register">Sign Up</a>
+                        <a href="#">delete</a>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+    
+        <!-- header section ends here -->
+    
+    </header>

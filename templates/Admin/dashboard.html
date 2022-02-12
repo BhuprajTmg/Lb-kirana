@@ -1,6 +1,6 @@
 {% extends 'Admin/base.html' %} {% block content %}
 
-    <!-- BOdy section starts here -->
+    {% comment %} <!-- BOdy section starts here -->
     <div class="container-content">
         <a href="#Sales">
             <div class="cate_gories">
@@ -29,7 +29,7 @@
         <a href="#Sales">
             <div class="cate_gories-2">
                 <div class="image-four">  </div>
-                <div class="image-title" style="font-size:x-large;">Ordered</div>
+                <div class="image-title" style="font-size:x-large;">Order Completed</div>
             </div>
         </a>
     </div>
@@ -364,6 +364,197 @@
                 <button class="buynow-btn">Buy now</button>
             </div>
         </div>
+    </div> {% endcomment %}
+
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Button with data-bs-target
+    </button>
+
+    <div class="offcanvas offcanvas-start sidebar-nav bg-dark text-white" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        
+        <div class="offcanvas-body p-0">
+            <nav class="navbar-dark">
+                <ul class="navbar-nav">
+                    <li>
+
+                        <div class="text-muted small fw-bold text-uppercase px-3">CORE</div>
+
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active"></a>
+                        <span class="me-2 mx-3">
+                            <i class="bi bi-speedometer2"></i>
+                        </span>
+                        <span>
+                            Dashboard
+                        </span>
+                    </li>
+                    
+                    <li class="my-4">
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3">Product</div>
+                    </li>
+
+                    <li >
+                        <a class="nav-link px-3 sidebar-link" 
+                            data-bs-toggle="collapse" 
+                            href="#collapseExample" 
+                            role="button" 
+                            aria-expanded="false" 
+                            aria-controls="collapseExample">
+
+                           <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                           <span> Orders </span>
+                           <span class="right-icon ms-auto"><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                          <div class="collapse" id="collapseExample">
+                            <div>
+                                <ul class="navbar-nav ps-3">
+                                    <li>
+                                        <a href="#" class="nav-link px-3">
+                                            <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                                            <span> List </span>
+                                        </a>
+
+                                        <a href="#" class="nav-link px-3">
+                                            <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                                            <span> Details </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                          </div>
+
+                    </li><br>
+                    <li class="my-4">
+                        <hr class="dropdown-divider" />
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-3 active"></a>
+                        <span class="me-2 mx-3">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                        <span>
+                            Customer
+                        </span>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-3 active"></a>
+                        <span class="me-2 mx-3">
+                            
+                            <i class="bi bi-person-circle"></i>
+                        </span>
+                        
+                        <a href="/admin/myprofile/"><span>My Profile</span></a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
     </div>
+    <!-- canvas ends -->
+
+    <!-- mainpage starts -->
+    <main class="mt-5 pt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 fw-bold fs-3">DashBoard</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Primary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Primary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Primary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Primary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Customer Table
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered border-dark mt-2">
+                                    <thead class="pt-3 ">
+                                        
+                                      <tr>
+                                        <th scope="col-1" class="py-3 text-black" style="font-size: 20px;">ID</th>
+                                        <th scope="col-1" class="py-3 text-black" style="font-size: 20px;">First Name</th>
+                                        <th scope="col-1" class="py-3 text-black" style="font-size: 20px;">Last Name</th>
+                                        <th scope="col-1" class="py-3 text-black" style=" font-size: 20px;">Email</th>
+                                        <th scope="col-1" class="py-3 text-black" style="font-size: 20px;">Contact</th>
+                                      </tr>
+                                      
+                                    </thead>
+                                    <tbody>
+                                        {% for user in users %}
+                                      <tr>
+                                        
+                                        <th scope="row">{{user.customer_id}}</th>
+                                        <td style=" font:large; color:black;" class="py-3">{{user.customer_fname}}</td>
+                                        <td style=" font:large; color:black;" class="py-3">{{user.customer_lname}}</td>
+                                        <td style=" font:large; color:black;" class="py-3">{{user.email}}</td>
+                                        <td style=" font:large; color:black;" class="py-3">{{user.number}}</td>
+                            
+                                      </tr>
+                                      {% endfor %}
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </main>
 
     {% endblock %}

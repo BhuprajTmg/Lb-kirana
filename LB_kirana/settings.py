@@ -54,6 +54,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'LB_kirana.urls'
 
+STATIC_ROOT = '/static/'
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -134,6 +136,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
+
 #Email setting
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
@@ -144,3 +147,6 @@ EMAIL_HOST_USER = 'bhupraj875@gmail.com'
 EMAIL_HOST_PASSWORD = 'nfyilyqyhhwknnak'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
+
+MEDIA_URL = '/assets/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/assets')

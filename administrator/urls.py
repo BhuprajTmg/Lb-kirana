@@ -5,8 +5,6 @@ from administrator import views
 
 urlpatterns = [
     path("admin_login/",views.admin_login, name='login'),
-    path("dashboard/", views.dashboard, name="dashboard"),
-    # path("dashboard", views.dashboard, name="dashboard")
 
     path("dashboard/",views.dashboard, name='dashboard'),
 
@@ -15,5 +13,7 @@ urlpatterns = [
     path('customer/', views.customer, name='customer'),
 
     path('order/', views.order, name='order'),
+
+    path('myprofile/', views.myprofile, name='myprofile'),
 
 ]

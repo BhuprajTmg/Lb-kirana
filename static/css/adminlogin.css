@@ -35,3 +35,11 @@ img{
     border-style: none;
     color: #FD7E14;
 }
+
+.set{
+    border: 1px solid rgba(50, 131, 61, 0.705); 
+    -webkit-box-shadow: -1px 4px 20px 11px rgba(50, 131, 61, 0.705);
+    -moz-box-shadow: -1px 4px 20px 11px rgba(50, 131, 61, 0.705);
+    box-shadow: -1px 4px 20px 11px rgba(50, 131, 61, 0.705);
+
+}

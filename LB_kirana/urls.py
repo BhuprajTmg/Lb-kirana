@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+from LB_kirana.settings import STATIC_ROOT
+
 urlpatterns = [
     # path("admin/", admin.site.urls),
     path("product/", include("products.urls")), 

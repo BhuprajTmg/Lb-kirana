@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform:capitalize;
+    transition: all .2s linear;
+}
+
+:root{
+    --offconvas-width:270px;
+    --topNavbarHeight:56px;
+}
+
+.sidebar-nav{
+    width: var(--offconvas-width);
+}
+
+.sidebar-link{
+    display: flex;
+    align-items: center;
+
+}
+
+.sidebar-link .right-icon{
+    display: inline-flex;
+}
+
+@media(min-width:992px) {
+
+    .body{
+        overflow: auto !important;
+    }
+
+    .sidebar-nav{
+        transform: none;
+        visibility: visible !important;
+        top: var(--topNavbarHeight);
+        height: calc(100% - var(--topNavbarHeight));
+    }
+
+    main{
+        margin-left: var(--offconvas-width);
+    }
+    
+}

@@ -25,35 +25,52 @@
           <div class="col-md-4 col-sm-4 col-xs-12"></div>
           <div class="col-md-4 col-sm-4 col-xm-12">
               <!-- Form starts here  -->
-
                 <form class="form-container" action="#" method="POST" class="register">
-                  {% csrf_token %}
+                  
+                  <form action="" class="mt-5 border bg-light"class="form-container" action="#" method="POST">
+                    {% csrf_token %}
 
-                  <div class="text-center">
-                      <p class="font">Register </p>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputUsername" style="color: white;">User Name</label>
-                    <input type="username" name="username" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Enter username">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1" style="color: white;">Email Address</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
-                  </div>
-                  <div class="form-group">
-                      <label for="exampleInputPassword1" style="color: white;">Password</label>
-                      <input type="Password" name="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Enter Password">
+                    <div class="text-center">
+                      <p class="font">  Register </p>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword2" style="color: white;">Rewrite Password</label>
-                      <input type="password" name="confirm_password" class="form-control" id="exampleInputPassword2" placeholder="Re Enter Password">
+                    
+                    <div class="row">
+                        <div class="mb-3 col-md-6 ">
+                            <label for="exampleInputUsername" style="color: white;">First Name</label>
+                            <input type="text" name="customer_fname" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+                        </div>
+
+                        <div class="mb-3 col-md-6">
+                            <label for="exampleInputUsername" style="color: white;">User Last Name</label>
+                            <input type="text" name="customer_lname" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+                        </div>
+
+                        <div class="mb-3 col-md-12">
+                            <label for="exampleInputEmail1" style="color: white;">Email Address</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label for="exampleInputUsername" style="color: white;">Number </label>
+                            <input type="Number" name="number" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label for="exampleInputPassword1" style="color: white;">Password</label>
+                            <input type="Password" name="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Enter Password">
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label for="exampleInputPassword2" style="color: white;">confirm Password</label>
+                            <input type="password" name="confirm_password" class="form-control" id="exampleInputPassword2" placeholder="Re Enter Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-sucess btn-block " style="background-color: lawngreen; margin-top:8px;"> Register </button>
+
                     </div>
-                  <div class="form-check text-center" >
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label " >Agree all Terms & condition</label>
-                  </div>
-                  <button type="submit" class="btn btn-sucess btn-block " style="background-color: lawngreen; margin-top:8px;"> Register </button>
-                </form>
+                    
+                </form>  
+
+                  
+
+                  
               <!-- Form ends here  -->
           </div>
           <div class="col-md-4 col-sm-4 col-xm-12"></div>

@@ -1,54 +1,49 @@
 {% extends 'Admin/base.html' %} {% block content %}
 
-<div class="container-content">
-        
-    <a href="#home"> <img src="/static/image/header/backtotop.png" style="width: 3%; position:fixed; top: 640px; left: 1350px"  alt=""> </a>
+<div class="product">
 
-    <div class="deal-container" id="vegetables">
-        
-        <div class="col-12 pb-3 d-flex justify-content-center"style="background-color: #68B49D; opacity:0.8;">
-            <button class="admin_add_button">
-                <h4>Your Customer</h4>
-            </button>
-        </div>
+  <a href="#home"> <img src="/static/image/header/backtotop.png"
+      style="width: 3%; position:fixed; top: 640px; left: 1350px; " alt=""> </a>
 
-        <div class="col-log-12 text-center ">
+  <div class="admin-customer pb-2" id="vegetables">
 
-            <table class="table table-bordered border-warning">
-                <thead>
-                  <tr>
-                    <th scope="col-1" class="py-3" style="font-size: 20px ">ID</th>
-                    <th scope="col-1" class="py-3"style="font-size: 20px;">Name</th>
-                    <th scope="col-1" class="py-3"style=" font-size: 20px;">Email</th>
-                    <th scope="col-1" class="py-3"style="font-size: 20px;">Contact</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td style=" font:large; color:white;" class="py-3">Dristi</td>
-                    <td style=" font:large; color:white;" class="py-3">dhristi25@gmail.com</td>
-                    <td style=" font:large; color:white;" class="py-3">9826770336</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td style="color: white;" class="py-3">Bhupraj</td>
-                    <td style="color: white;" class="py-3">bhupraj875@gmail.com</td>
-                    <td style="color: white;" class="py-3">9826770362</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td style="font:large; color:white;" class="py-3">Saroj</td>
-                    <td style=" font:large; color:white;" class="py-3">tsaroj895#gmail.com</td>
-                    <td style=" font:large; color:white;"class="py-3" >9826770332</td>
-                  </tr>
-                </tbody>
-              </table>
-
-
-        </div>
+    <div class="col-12 pb-3 d-flex justify-content-center" style="background-color: #68B49D; opacity:0.9;">
+      <button class="admin_add_button">
+        <h4>Your Customer</h4>
+      </button>
     </div>
-        
+
+    <div class="col-log-12 text-center pt-3">
+
+      <table class="table table-bordered border-dark mt-2">
+        <thead class="pt-3 ">
+          <tr>
+            <th scope="col-1" class="py-3 text-black" style="font-size: 20px;">ID</th>
+            <th scope="col-1" class="py-3 text-black" style="font-size: 20px;">First Name</th>
+            <th scope="col-1" class="py-3 text-black" style="font-size: 20px;">Last Name</th>
+            <th scope="col-1" class="py-3 text-black" style=" font-size: 20px;">Email</th>
+            <th scope="col-1" class="py-3 text-black" style="font-size: 20px;">Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in users %}
+          <tr>
+
+            <th scope="row">{{user.customer_id}}</th>
+            <td style=" font:large; color:black;" class="py-3">{{user.customer_fname}}</td>
+            <td style=" font:large; color:black;" class="py-3">{{user.customer_lname}}</td>
+            <td style=" font:large; color:black;" class="py-3">{{user.email}}</td>
+            <td style=" font:large; color:black;" class="py-3">{{user.number}}</td>
+
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+
+    </div>
+  </div>
+
 </div>
 
 {% endblock %}

@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lb-Kirana </title>
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    
+
+</head>
+<body>
+    <header>
+        <!-- header section starts here -->
+    
+        <div class="header-1">
+            <a href="#" class="logo"><img src="/static/image/logo.svg" style="height: 5rem; padding-top: -1rem; padding-bottom: -1rem;"  alt="img_logo"></a>
+    
+            <form action="" class="search-box-container">
+                <input type="search" name="search" id="search-box" placeholder="search here....">
+    
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </div>
+    
+        <div class="header-2">
+    
+            <div id="menu-bar" class="fas fa-bars"></div>
+    
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#category">category</a>
+                <a href="#products">products</a>
+                <a href="#contact">contact</a>
+            </nav>
+    
+            <div class="icons dropdown">
+                <a href="#" class="fas fa-user-circle dropbtn">
+                    <div class="dropdown-content">
+                        <a href="/logout/">LogOut</a>
+                        <a href="#">delete</a>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+    
+        <!-- header section ends here -->
+    
+    </header>
